@@ -1,0 +1,143 @@
+
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Make it compatible to mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>L RCB lmao</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color:powderblue;" data-new-gr-c-s-check-loaded="14.1097.0" data-gr-ext-installed="">
+  <h1 style="text-align:center;background-color:tomato;">IPL Winner Prediction</h1>
+  <p style="text-align:center;">--!Enter the required information with valid team and city names as shown below and scroll down for the model prediction!--</p>
+
+  <div style="position: relative; float: left; margin-left: 25rem; margin-top: 4rem;     height: 25rem;width: 15rem; text-align: center;  ">
+    <h2 align="left"> Valid Team Names: </h2>
+  <p align="left">
+    Royal Challengers Bangalore    <br>
+      Mumbai Indians                  <br>
+  Kolkata Knight Riders           <br>
+  Chennai Super Kings             <br>
+  Kings XI Punjab                 <br>
+  Delhi Daredevils               <br>
+  Rajasthan Royals                <br>
+  Sunrisers Hyderabad            <br>
+  Deccan Chargers                 <br>
+  Pune Warriors                  <br>
+  Delhi Capitals                  <br>
+  Gujarat Lions                   <br>
+  Kochi Tuskers Kerala            <br>
+  Rising Pune Supergiants  <br>
+ </p>
+</div>
+
+ <div class="login" style="
+    width: 20rem;
+    padding-left: 13rem;
+    float: left;
+    position: relative;
+    margin-top: 12rem;
+    width: 25rem;
+    height: 27rem;
+    text-align: center;">
+	
+     <!-- Action is where the data is sent. In our case, predict page.
+     If action is omitted, it assumed to be the current page -->
+    <form action="/predict" method="post" style="
+    position: relative;
+    float: left;
+">
+    	<input type="text" name="City" placeholder="City" required="required"><br>
+        <input type="int" name="Neutral Venue (0 or 1)" placeholder="Neutral Venue (0 or 1)" required="required"><br>
+        <input type="text" name="Team 1" placeholder="Team 1" required="required"><br>
+        <input type="text" name="Team 2" placeholder="Team 2" required="required"><br>
+        <input type="text" name="Toss Winner" placeholder="Toss Winner" required="required"><br>
+        <input type="text" name="Toss Decision" placeholder="Toss Decision" required="required"><br>
+
+        <p><button type="submit" class="btn btn-primary btn-block btn-large">Predict The Winner</button></p>
+    </form>
+
+ </div>
+
+    <div style="
+    padding-left: 2043m;
+    padding-left: 25rem;
+    margin-top: 7rem ;
+    text-align: center;
+    margin-right: 20rem;
+">
+    <h2 style="
+    width: 100%;
+"> Valid City Names: </h2>
+    <p>
+    Mumbai            <br>
+    Kolkata           <br>
+    Delhi              <br>
+    Bangalore         <br>
+    Hyderabad         <br>
+    Chennai           <br>
+    Chandigarh         <br>
+    Jaipur           <br>
+    Pune              <br>
+    Abu Dhabi          <br>
+    Dubai              <br>
+    Bengaluru          <br>
+    Durban             <br>
+    Visakhapatnam      <br>
+    Ahmedabad          <br>
+    Sharjah            <br>
+    Centurion         <br>
+    Rajkot            <br>
+    Dharamsala          <br>
+    Indore              <br>
+    Johannesburg        <br>
+    Cuttack             <br>
+    Cape Town           <br>
+    Port Elizabeth     <br>
+    Ranchi              <br>
+    Raipur             <br>
+    Kochi  <br>
+     </p>
+    </div>
+     <h2 align="center" style="margin-top: 1rem;"> Valid Toss Decisions: </h2>
+     <p align="center">
+     bat            <br>
+     field           <br>
+     </p>
+     
+   <br>
+   <br>
+   <h4 style="color:Red; text-align: center;">
+   {{ prediction_text }} </h4>
+   
+   <br>
+   <br>
+   <h3 style="background-color:tomato;">About The Project:</h3>
+   <p>
+   -&gt; The project uses a Random Tree Classifier Model to predict the outcome from the given teams. The necessary columns are taken as X features and prediciton varibale is taken as Y 
+   <br>
+   -&gt; The model is preped by first cleaning the data and fixing data (Changing Delhi Daredevil to Delhi Capitals etc). The data set is taken from Kaggle.
+   <br>
+   -&gt; The data consists of every matchset from 2019 to 2020 and the models predictions are based on matches held since then.
+   <br>
+   -&gt; To view my github and see the source code for the same, the link is given below. My linkedin is mentioned as well.
+   <br>
+   -&gt;  <a href="url">IPL_Project</a>  &amp;  <a href="url">Linkedin</a>
+   <br>
+   </p><p style="text-align:center;">!Made With Passion!</p>
+   <p></p>
+   
+
+ </div>
+
+
+</body>
+</html>
